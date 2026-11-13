@@ -1,0 +1,12 @@
+# Build outputs / local cruft (anchored: upstream has source dirs that must reach the image)
+/mayhem/.build-fuzz/
+/mayhem/.build-oracle/
+*.o
+*.a
+*.so
+*.dylib
+**/__pycache__/
+
+.DS_Store
+*.swp
+*~

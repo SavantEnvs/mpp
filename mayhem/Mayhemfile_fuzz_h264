@@ -1,0 +1,9 @@
+project: savantenvs/mpp
+target: fuzz_h264
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_h264/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_h264
+    libfuzzer: true
+    timeout: 30
